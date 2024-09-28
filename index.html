@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noelle Brainrot</title>
+<style>
+<style>
+  * 
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #E6E6E6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+ 
+    header {
+  background-color: #333;
+  color: #fff;
+  padding: px -10;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+font-size: 20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+ 
+}
+h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-385%, -55%); 
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.logo img {
+  width: 75px;
+  border-radius: 50%;
+  
+}
+.background-image {
+  position: relative;
+  background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/448978140_997092644935127_9099686721502538431_n.jpg?stp=dst-jpg_p403x403&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGQ6-pKmP9TaLRhUdcs7tHxe0b76Yn_Ntl7Rvvpif822YhEfm7BR7f4EVTtqbmC0dUVTkJKqVjGUHZdUBj2O19h&_nc_ohc=jlI6V18Z6uQQ7kNvgF4hX9S&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHWCcrGK8NT6Bi4hvu25RGdisTCjEaqifywXIU-SaRYZg&oe=66C8739F');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image {
+  position: relative;
+  background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/02/noelleheader.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.background-image h2,
+.background-image p {
+  color: #fff; 
+}
+
+.background-image h2 span {
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.background-image p {
+  position: relative; 
+  z-index: 1; 
+}
+
+
+ 
+
+  .description-space {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .description-space p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .mission-vision {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .mission-vision h3 {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #3b7ca9;
+  }
+
+  .mission-vision p {
+    display: none;
+  }
+
+  .mission-vision h3:hover + p {
+    display: block;
+  }
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .box {
+    width: 200px;
+    margin: 0 20px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffd178;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .box img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .box p {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .box-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .box:hover .box-text {
+    opacity: 1;
+  }
+
+ footer {
+  background-color: #FFAA33;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.footer-text {
+  flex: 2; 
+  text-align: left;
+  margin: 10px;
+}
+
+.youtube-iframe {
+  flex: 1;
+  display: flex;
+  justify-content:
+}
+
+.footer-photo {
+  flex: 1; 
+  text-align: left; 
+  margin: 10px;
+}
+
+.footer-photo img {
+  width: 100px; 
+  border-radius: 0px; 
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="https://genshin-impact.fandom.com/wiki/Noelle">
+      <img src="https://i.pinimg.com/736x/ff/0a/46/ff0a469dd37d0a5de109d696d6a067bb.jpg" alt="Logo">
+    </a>
+  </div>
+  <ul>
+  <li><a href="https://en.wikipedia.org/wiki/Hatsune_Miku">Random Miku Plug</a></li>
+  <li><a href="https://www.youtube.com/watch?v=FtutLA63Cp8">Bad fruit...?</a></li>
+  <li><a href="https://linktr.ee/HeizouKristo">Co-Dev</a></li>
+   <li><a class="active" href="https://linktr.ee/Heckler416">Developer</a></li>
+</ul>
+  <h1>Noelle2x</h1>
+  <a href="" class="contact-info">‎ </a>
+</header>
+<div class="background-image">
+  <h2><p>Noelle my beloved</span></h2>
+  <p>Yes, i spend an unfathomable time doing this.</p>
+</div>
+
+<div class="description-space">
+  <p>As you can see, I love noelle so much I spent way too much time trying to fucking figure shit out like a dumb fucking retard that i am.</p>
+ 
+
+</div>
+
+<div class="mission-vision">
+  <h3>My Mission</h3>
+  <p>A heart so loyal, strong, and true,
+Noelle, our shield in skies of blue.
+To love her is to love what’s right—
+A soul that shines with radiant light.</p>
+  <h3>My Vision</h3>
+  <p>In every deed, both small and great,
+Her love for all will never wait.
+So let us love, and honor well,
+The steadfast heart of dear Noelle.</p>
+</div>
+
+<div class="box-container" id="box-container">
+  <div class="box">
+    <img src="https://static.wixstatic.com/media/0e940a_1bf75502dd97419583a19ddb648f69a9~mv2.png/v1/fill/w_256,h_256,al_c,q_85,enc_auto/0e940a_1bf75502dd97419583a19ddb648f69a9~mv2.png" alt="Photo 1">
+    <a href="https://genshin-impact.fandom.com/wiki/Husk_of_Opulent_Dreams">
+    <div class="box-text">Check the guide</div></a>
+    <p>Noelle Artifact set</p>
+  </div>
+
+  <div class="box">
+    <img src="https://i.redd.it/yindm77cfat71.png" alt="Photo 2">
+    <a href="https://genshin-impact.fandom.com/wiki/Redhorn_Stonethresher">
+    <div class="box-text">Check the Guide</div></a>
+    <p>Best weapons</p>
+  </div>
+
+  <div class="box">
+    <img src="https://i2.wp.com/genshinbuilds.aipurrjects.com/genshin/characters/noelle/image.png?strip=all&quality=75&w=256">
+    <a href="https://genshin-impact.fandom.com/wiki/Mondstadt">
+    <div class="box-text">Check the guide</div></a>
+    <p>Background</p>
+  </div>
+
+  <div class="box">
+    <img src="https://upload-os-bbs.hoyolab.com/upload/2024/02/09/324570860/9e9254c396f3d75b3796afafa10164e5_3602790123500100947.png">
+    <a href="https://docs.google.com/document/d/120EAVmK8AhBJoIPYLkak7GU8hnUbuLDqe8DJzuj0EO4/edit?usp=sharing">
+      <div class="box-text">Check the Guide</div></a>
+    <p>Why Noelle is best wife</p>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-text">
+    <p>You know what</p>
+     <p>shout out to Chatgpt for dumbing this down</p>
+    <p>I have classes at 7 in the morning when I decided to make this</p>
+    <p>This is supposed to be a joke fucking hell</p>
+    <p><a href="https://www.youtube.com/watch?v=_ouXET8zNI8">Fuck this shit man, here's the Nichijou OST</a></p>
+  </div>
+
+  <!-- YouTube Video in the middle of the footer -->
+  <div class="youtube-iframe">
+    <iframe width="420" height="300" src="https://www.youtube.com/embed/RvOoLG7z16A?si=7R0JOvKv1MhPhGiC" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="footer-photo">
+    <img src="https://mystickermania.com/cdn/stickers/genshin-impact/genshin-impact-geo-512x512.png" alt="Footer Photo">
+  </div>
+</footer>
+
+
+
+
+  
+</body>
+</html>
